@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ahkin</name>
+		<description></description>
+		<author url="https://www.reddit.com/r/UnearthedArcana/comments/ijo6j6/the_ahkin_v2_a_playable_race_of_rodentfolk_for_5e/">u/silver_cake</author>
+		<update version="1.0.0">
+			<file name="race-ahkin.xml" url="https://raw.githubusercontent.com/TeslaSP2/random-stuff-for-aurora/master/races/race-ahkin.xml" />
+		</update>
+	</info>
+	
+	<element name="Ahkin" type="Race" source="u/silver_cake" id="ID_RACE_AHKIN">
+		<description>
+			<p class="flavor">"Keep an eye on halfpaw, Eida."<br/>
+				Farin said softly, looking at the lean Ahkin that accompanied them. it hadn't taken long for Farin to notice that whenever there was a fight their Ahkin friend would scurry off into the tall underbrush to hide. but her ability to lead them safely through the grey wilds had more than made up for her cowardice.<br/>
+				-Farin Margon.<br/>
+				To deaths court.</p>
+			<p>Ahkin are a hearty people, surviving under circumstances that would crush a less resilient people. They live in the highest of mountains, the deepest of caves, and among the great flatlands.</p>
+			<h4>Small and light</h4>
+			<p>With their small size and slender frame, Ahkin appear almost sickly to most humans and to members of many other races. ranging in size from 3 to 5 feet tall at their tallest, many Ahkin could be confused for a child by members of other races.</p>
+			<h4>Quick lived</h4>
+			<p>Ahkin live short lives, living to just over 30 years. giving them a drive to do and see that other longer lived races do not. They reach maturity at the age of 4, giving them ample time to find what they want out of life.</p>
+			<p class="indent">They find that the tendency of longer lived races to settle down in one spot for years at a time boring and a waste of time. Ahkin are doers, and you will often find them busy traveling or trading or whatever else strikes their fancy. if they are going to do it they do it well until it no longer holds their interest.</p>
+			<h4>Curious by nature</h4>
+			<p>Ahkin are an inquisitive folk. When they are not tending to their young or hunting for food they can be found tinkering with small objects and jewelry, tending to injured wildlife, or observing their surroundings.</p>
+			<p class="indent">They find anything and everything a font of interesting observations and ideas, and are happy to share it with anyone who listens. Because of their inquisitive nature and tendency to take things apart to figure out how they work, it is not suprising that many Ahkin become wizards or artificers. indeed it is more surprising that more do not.</p>
+			<h4>Ahkin names</h4>
+			<p>
+				<b>Forenames</b>: Reep, Varin, Lif, Bilth, Pip, June, Garend, Untith, Otis.
+				<br/>
+				<b>Surnames</b>: Halfpaw, Cleanfur, Sharpear, Quickfoot, Littlepaw, White-eye.
+			</p>
+			<h4>Ahkin Traits</h4>
+			<p>Your Ahkin character has the following racial traits.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span> Your Intelligence score increases by 2.
+				<br/>
+				<span class="feature">Age.</span> Ahkin mature rapidly, reaching adulthood at the age of 4, and living to 30 years old.
+				<br/>
+				<span class="feature">Alignment.</span> Ahkin don't tend towards any side on law and chaos, though Hill Ahkin tend to be more chaotic than their brothers in the plains. They are often neutral seeing both good and evil as part of life, but not one to concern themselves with.
+				<br/>
+				<span class="feature">Size.</span> Ahkin vary in size from 3 to 5 feet tall and weigh around 50 pounds. Your size is small.
+				<br/>
+				<span class="feature">Speed.</span> Your base walking speed is 30 feet.
+				<br/>
+				<span class="feature">Keen Senses.</span> You have advantage on Wisdom (Perception) checks that rely Smell
+				<br/>
+				<span class="feature">Ahkin Resistance.</span> You have advantage on saving throws against diseases.
+				<br/>
+				<span class="feature">Claws.</span> Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike
+				<br/>
+				<span class="feature">Languages.</span> You can speak, read, and write Common, Ahkin, and a language of your choice.
+			</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="fore">Reep, Varin, Lif, Bilth, Pip, June, Garend, Untith, Otis</set>
+			<set name="names" type="sur">Halfpaw, Cleanfur, Sharpear, Quickfoot, Littlepaw, White-eye</set>
+			<set name="names-format">{{fore}} {{sur}}</set>
+			<set name="height" modifier="2d8">3'</set>
+			<set name="weight" modifier="2d6">100 lb.</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="2"/>
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Language (Ahkin)" supports="Standard||Exotic" />
+			<grant type="Racial Trait" id="ID_SC_RACIAL_TRAIT_AHKIN_KEEN_SENSES" />
+			<grant type="Racial Trait" id="ID_SC_RACIAL_TRAIT_AHKIN_AHKIN_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_SC_RACIAL_TRAIT_AHKIN_AHKIN_CLAWS" />
+			<grant type="Racial Trait" id="ID_SC_RACIAL_TRAIT_AHKIN_SUBRACE" />
+		</rules>
+	</element>
+	<element name="Keen Senses" type="Racial Trait" source="u/silver_cake" id="ID_SC_RACIAL_TRAIT_AHKIN_KEEN_SENSES">
+		<description>
+			<p>You have advantage on Wisdom (Perception) checks that rely Smell</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Wisdom (Perception) checks that rely Smell</description>
+		</sheet>
+	</element>
+	<element name="Ahkin Resistance" type="Racial Trait" source="u/silver_cake" id="ID_SC_RACIAL_TRAIT_AHKIN_AHKIN_RESISTANCE">
+		<description>
+			<p>You have advantage on saving throws against diseases</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against diseases</description>
+		</sheet>
+	</element>
+	<element name="Claws" type="Racial Trait" source="u/silver_cake" id="ID_SC_RACIAL_TRAIT_AHKIN_AHKIN_CLAWS">
+		<description>
+			<p>Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike</p>
+		</description>
+		<sheet action="Action">
+			<description>You deal slashing damage equal to 1d4 + {{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike</description>
+		</sheet>
+	</element>
+	<element name="Ahkin Subrace" type="Racial Trait" source="u/silver_cake" id="ID_SC_RACIAL_TRAIT_AHKIN_SUBRACE">
+		<description>
+			<p>Ahkin are split into multiple subraces. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Sub Race" name="Ahkin Subrace" supports="Ahkin" />
+		</rules>
+	</element>
+
+	<element name="Hill Ahkin" type="Sub Race" source="u/silver_cake" id="ID_SC_SUB_RACE_HILL_AHKIN">
+		<supports>Ahkin</supports>
+		<description>
+			<p>As a hill Ahkin you are fierce and territorial, you have fought hard to earn what you have and you are not going to give it up easily.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1.</p>
+			<p class="indent"><strong><em>Sure-footed.</em></strong> You gain a climbing speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Skill Proficiency.</em></strong> You gain proficiency in either Intimidation or Athletics.</p>
+			<p class="indent"><strong><em>Fury of the Small.</em></strong> When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your level. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HILL_AHKIN_SURE_FOOTED" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HILL_AHKIN_FURY_OF_THE_SMALL" />
+		</rules>
+	</element>
+	<element name="Sure-footed" type="Racial Trait" source="u/silver_cake" id="ID_RACIAL_TRAIT_HILL_AHKIN_SURE_FOOTED">
+	  <description>
+		<p>You gain a climbing speed equal to your walking speed.</p>
+	  </description>
+	  <sheet>
+		<description>You gain a climbing speed equal to your walking speed.</description>
+	  </sheet>
+	</element>
+	<element name="Fury of the Small" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_HILL_AHKIN_FURY_OF_THE_SMALL">
+	  <description>
+		<p>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your level. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
+	  </description>
+	  <sheet>
+		<description>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your level. Once you use this trait, you can't use it again until you finish a short or long rest.</description>
+	  </sheet>
+	</element>
+
+
+</elements>

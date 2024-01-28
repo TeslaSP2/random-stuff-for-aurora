@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- https://aurorabuilder.com/documentation/anatomy-of-the-element/ -->
+<!-- https://github.com/aurorabuilder/elements/ -->
+<index>
+	<info>
+		<name>Your Content</name>
+		<update version="1.0.0">
+			<file name="teslasp2.index" url="https://raw.githubusercontent.com/TeslaSP2/random-stuff-for-aurora/master/teslasp2.index" />
+		</update>
+	</info>
+	<files>
+		<!-- https://www.gmbinder.com/share/-MEexv9YZ2Vtnm-HKgJg -->
+		<file name="race-ahkin.xml" url="https://raw.githubusercontent.com/TeslaSP2/random-stuff-for-aurora/master/races/race-ahkin.xml" />
+		<!-- http://dnd5e.wikidot.com/warlock:fathomless -->
+		<!-- <file name="the-fathomless.xml" url="https://raw.githubusercontent.com/TeslaSP2/random-stuff-for-aurora/master/subclasses/warlock/the-fathomless.xml" /> -->
+	</files>
+</index>
