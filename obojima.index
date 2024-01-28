@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+    <info>
+        <!-- https://drive.google.com/drive/folders/1ERDUB4TWk3LCcqgyvhx09HOu2_6-J8at -->
+        <name>Obojima: Tales From The Tall Grass</name>
+        <update version="0.1.0">
+			<file name="obojima.index" url="https://raw.githubusercontent.com/TeslaSP2/random-stuff-for-aurora/master/obojima.index" />
+		</update>
+    </info>
+    <files>
+        <file name="archetypes.index" url="https://raw.githubusercontent.com/TeslaSP2/random-stuff-for-aurora/master/obojima/archetypes.index" />
+        <file name="equipment.index" url="https://raw.githubusercontent.com/TeslaSP2/random-stuff-for-aurora/master/obojima/equipment.index" />
+        <file name="races.index" url="https://raw.githubusercontent.com/TeslaSP2/random-stuff-for-aurora/master/obojima/races.index" />
+        <file name="spells.index" url="https://raw.githubusercontent.com/TeslaSP2/random-stuff-for-aurora/master/obojima/spells.index" />
+    </files>
+</index>

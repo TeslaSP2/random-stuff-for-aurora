@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- https://aurorabuilder.com/documentation/anatomy-of-the-element/ -->
-<!-- https://github.com/aurorabuilder/elements/ -->
+<!-- https://github.com/AuroraLegacy/elements/ -->
 <index>
 	<info>
 		<name>Tesla's Custom Kitchen Sink</name>
-		<update version="1.1.0">
+		<update version="1.2.0">
 			<file name="teslasp2.index" url="https://raw.githubusercontent.com/TeslaSP2/random-stuff-for-aurora/master/teslasp2.index" />
 		</update>
 	</info>
 	<files>
 		<!-- https://www.gmbinder.com/share/-MEexv9YZ2Vtnm-HKgJg -->
 		<file name="race-ahkin.xml" url="https://raw.githubusercontent.com/TeslaSP2/random-stuff-for-aurora/master/races/race-ahkin.xml" />
+        <!-- https://drive.google.com/drive/folders/1ERDUB4TWk3LCcqgyvhx09HOu2_6-J8at -->
+		<file name="obojima.index" url="https://raw.githubusercontent.com/TeslaSP2/random-stuff-for-aurora/master/obojima.index" />
 	</files>
 </index>

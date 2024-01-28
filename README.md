@@ -1,16 +1,9 @@
-# repositoryname
-additional content to extend [Aurora](https://aurorabuilder.com/), by yourname
+# Random Stuff for Aurora
+Additional content to extend [Aurora](https://aurorabuilder.com/), by TeslaSP2
 
-index url: https://raw.githubusercontent.com/yourgithubaccount/repositoryname/master/user-yourname.index
+Index url: https://raw.githubusercontent.com/TeslaSP2/random-stuff-for-aurora/master/teslasp2.index
 
----
+# Stuff added
+## [Ahkin Race By u/silver_cake](https://www.reddit.com/r/UnearthedArcana/comments/ijo6j6/the_ahkin_v2_a_playable_race_of_rodentfolk_for_5e/)
 
-instructions to get started with the repository:
-
-- replace ***yourname*** in the index filename, the user-yourname folder, this readme, and all the urls in each file
-- replace ***yourgithubaccount*** in all the urls in each file with the name of your github account
-- replace ***repositoryname*** in all the urls in each file with the name of this repository
-
-after having replaced the parts you can include the index using the new url
-
-remember to increment the update version of the file each time when you change the content
+## [Obojima: Tales From The Tall Grass Playtest Material](https://drive.google.com/drive/folders/1ERDUB4TWk3LCcqgyvhx09HOu2_6-J8at)
