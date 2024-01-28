@@ -4,7 +4,7 @@
 		<name>Ahkin</name>
 		<description></description>
 		<author url="https://www.reddit.com/r/UnearthedArcana/comments/ijo6j6/the_ahkin_v2_a_playable_race_of_rodentfolk_for_5e/">u/silver_cake</author>
-		<update version="1.0.0">
+		<update version="2.0.0">
 			<file name="race-ahkin.xml" url="https://raw.githubusercontent.com/TeslaSP2/random-stuff-for-aurora/master/races/race-ahkin.xml" />
 		</update>
 	</info>
@@ -120,7 +120,7 @@
 			<stat name="strength" value="1" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HILL_AHKIN_SURE_FOOTED" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_ATHLETICS" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HILL_AHKIN_FURY_OF_THE_SMALL" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AHKIN_FURY_OF_THE_SMALL" />
 		</rules>
 	</element>
 	<element name="Sure-footed" type="Racial Trait" source="u/silver_cake" id="ID_RACIAL_TRAIT_HILL_AHKIN_SURE_FOOTED">
@@ -131,7 +131,7 @@
 		<description>You gain a climbing speed equal to your walking speed.</description>
 	  </sheet>
 	</element>
-	<element name="Fury of the Small" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_HILL_AHKIN_FURY_OF_THE_SMALL">
+	<element name="Fury of the Small" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_AHKIN_FURY_OF_THE_SMALL">
 	  <description>
 		<p>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your level. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
 	  </description>
@@ -140,5 +140,156 @@
 	  </sheet>
 	</element>
 
+	<element name="Plains Ahkin" type="Sub Race" source="u/silver_cake" id="ID_SC_SUB_RACE_PLAINS_AHKIN">
+		<supports>Ahkin</supports>
+		<description>
+			<p>As a Plains Ahkin you know the value of your own life far outweighs anything else you have. food and sword can be replaced, but child or mate cannot. as such many plains Ahkin scamper into cover at the first sign of danger.</p>
+			<p class="indent">Though they may scatter at the first signs of danger, plains Ahkin make great guides though uncharted lands. as their sense for danger and knack for survival allow them to quickly find the safest route to their destination, or guide them to safety.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Skill Proficiency.</em></strong> You gain proficiency in Survival.</p>
+			<p class="indent"><strong><em>Scamper.</em></strong> Your reflexes are honed to the movements of potential threats. You can move up to half your speed as a reaction when an enemy gets within 5 feet of you. This movement doesn’t provoke opportunity attacks. Once you have used this trait, you can't use it again until you move 0 feet on one of your turns.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="constitution" value="1" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AHKIN_SCAMPER" />
+		</rules>
+	</element>
+	<element name="Scamper" type="Racial Trait" source="u/silver_cake" id="ID_RACIAL_TRAIT_AHKIN_SCAMPER">
+	  <description>
+		<p> Your reflexes are honed to the movements of potential threats. You can move up to half your speed as a reaction when an enemy gets within 5 feet of you. This movement doesn’t provoke opportunity attacks. Once you have used this trait, you can't use it again until you move 0 feet on one of your turns.</p>
+	  </description>
+	  <sheet>
+		<description> Your reflexes are honed to the movements of potential threats. You can move up to half your speed as a reaction when an enemy gets within 5 feet of you. This movement doesn’t provoke opportunity attacks. Once you have used this trait, you can't use it again until you move 0 feet on one of your turns.</description>
+	  </sheet>
+	</element>
 
+	<element name="Deep Ahkin" type="Sub Race" source="u/silver_cake" id="ID_SC_SUB_RACE_DEEP_AHKIN">
+		<supports>Ahkin</supports>
+		<description>
+			<p>As a Deep Ahkin you are always pursuing what you want. maybe a dragon's hoard caught your eye, or a Drow picked up a weapon you now want, whatever it is one thing is for certain, you are going to get it.</p>
+			<p class="indent">No matter how long you have to plot and plan you will get what you are after. that is Why deep Ahkin are labeled the most cunning of the Ahkin, because they know that sometimes you have to wait to get what you are really after.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can read and write Undercommon.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Accustomed to the dark of caves and the deep underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Naturally Stealthy.</em></strong> You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="dexterity" value="1" />
+			<grant type="Language" id="ID_LANGUAGE_UNDERCOMMON" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURALLY_STEALTHY" />
+		</rules>
+	</element>
+
+	<element name="Coastal Ahkin" type="Sub Race" source="u/silver_cake" id="ID_SC_SUB_RACE_COASTAL_AHKIN">
+		<supports>Ahkin</supports>
+		<description>
+			<p>As a Coastal Ahkin exploration is in your blood. you love the feeling of a sea breeze in your fur, the sand of an unexplored shore under your paws, and the sense of adventure from being on a ship.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Skill Proficiency.</em></strong> You gain proficiency in Vehicles (water) and Navigator's tools.</p>
+			<p class="indent"><strong><em>Strong Swimmer.</em></strong> You gain a swim speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Natural Explorer.</em></strong> You have advantage of wisdom (perception) checks and intelligence (investigation) checks to find safe passage or shelter, or to spot dangers.</p>
+			<p class="indent"><strong><em>Oceanic adept.</em></strong> You can climb the rigging of ships with ease, you do not have disadvantage when you make an attack roll with a one handed weapon while on the rigging of a ship.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AHKIN_STRONG_SWIMMER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AHKIN_NATRUAL_EXPLORER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AHKIN_OCEANIC_ADEPT" />
+		</rules>
+	</element>
+	<element name="Strong Swimmer" type="Racial Trait" source="u/silver_cake" id="ID_RACIAL_TRAIT_AHKIN_STRONG_SWIMMER">
+	  <description>
+		<p>You gain a swim speed equal to your walking speed.</p>
+	  </description>
+	  <sheet>
+		<description>You gain a swim speed equal to your walking speed.</description>
+	  </sheet>
+	</element>
+	<element name="Natural Explorer" type="Racial Trait" source="u/silver_cake" id="ID_RACIAL_TRAIT_AHKIN_NATRUAL_EXPLORER">
+	  <description>
+		<p>You have advantage of wisdom (perception) checks and intelligence (investigation) checks to find safe passage or shelter, or to spot dangers.</p>
+	  </description>
+	  <sheet>
+		<description>You have advantage of wisdom (perception) checks and intelligence (investigation) checks to find safe passage or shelter, or to spot dangers.</description>
+	  </sheet>
+	</element>
+	<element name="Oceanic adept" type="Racial Trait" source="u/silver_cake" id="ID_RACIAL_TRAIT_AHKIN_OCEANIC_ADEPT">
+	  <description>
+		<p>You can climb the rigging of ships with ease, you do not have disadvantage when you make an attack roll with a one handed weapon while on the rigging of a ship.</p>
+	  </description>
+	  <sheet>
+		<description>You can climb the rigging of ships with ease, you do not have disadvantage when you make an attack roll with a one handed weapon while on the rigging of a ship.</description>
+	  </sheet>
+	</element>
+
+	<element name="Jungle Ahkin" type="Sub Race" source="u/silver_cake" id="ID_SC_SUB_RACE_JUNGLE_AHKIN">
+		<supports>Ahkin</supports>
+		<description>
+			<p>As a Jungle Ahkin you are stronger than the rest of your Ahkin kin. you use this strength to climb the tall trees of your jungle home to get a perch to glide down from. Jungle Ahkin are known for their tendency to stand their ground. while less aggressive then their hill counterparts, Jungle Ahkin put their hooked claws and muscle to use when fending off a larger creature or defending their homes.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2.</p>
+			<p class="indent"><strong><em>Climbing Claws.</em></strong> Your claws are Hooked unlike those of other Ahkin, you gain a climb speed equal to your move speed.</p>
+			<p class="indent"><strong><em>Glider.</em></strong> You have a pouch of skin under your arms that you can use to slow your fall or allow you to glide. When you fall and are not incapacitated, you can subtract up to 100 feet from your fall when calculating your fall damage and can move horizontally 2 feet for every 1 foot you fall. You can only use this trait while wearing light armor or medium armored designed to accommodate it.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength" value="2" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AHKIN_CLIMBING_CLAWS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AHKIN_GLIDER" />
+		</rules>
+	</element>
+	<element name="Climbing Claws" type="Racial Trait" source="u/silver_cake" id="ID_RACIAL_TRAIT_AHKIN_CLIMBING_CLAWS">
+	  <description>
+		<p>Your claws are Hooked unlike those of other Ahkin, you gain a climb speed equal to your move speed.</p>
+	  </description>
+	  <sheet>
+		<description>Your claws are Hooked unlike those of other Ahkin, you gain a climb speed equal to your move speed.</description>
+	  </sheet>
+	</element>
+	<element name="Glider" type="Racial Trait" source="u/silver_cake" id="ID_RACIAL_TRAIT_AHKIN_GLIDER">
+	  <description>
+		<p>You have a pouch of skin under your arms that you can use to slow your fall or allow you to glide. When you fall and are not incapacitated, you can subtract up to 100 feet from your fall when calculating your fall damage and can move horizontally 2 feet for every 1 foot you fall. You can only use this trait while wearing light armor or medium armored designed to accommodate it.</p>
+	  </description>
+	  <sheet>
+		<description>When you fall and are not incapacitated, you can subtract up to 100 feet from your fall when calculating your fall damage and can move horizontally 2 feet for every 1 foot you fall. You can only use this trait while wearing light armor or medium armored designed to accommodate it.</description>
+	  </sheet>
+	</element>
+
+	<element name="Desert Ahkin" type="Sub Race" source="u/silver_cake" id="ID_SC_SUB_RACE_DESERT_AHKIN">
+		<supports>Ahkin</supports>
+		<description>
+			<p>As a desert Ahkin you have a strong sense of community with your fellow Ajkin. You find that strength comes from a group of people, and you keep your friends and family close.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Natural Survivor.</em></strong> Your body is acclimatized to the harsh desert environment. You do not gain exhaustion from being in the heat or sun for too long, and you can survive for a week with little to no water.</p>
+			<p class="indent"><strong><em>Marching Beat.</em></strong> As an action you can drum your feet or tail on the ground to inspire your companions. you and up to 5 creatures that can see and hear you gain temporary hit points equal to your charisma modifier, and can add 1d4 to their next attack roll. once you have used this feature you cannot use it again until you have finished a long rest.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="charisma" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AHKIN_NATURAL_SURVIVOR" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AHKIN_MARCHING_BEAT" />
+		</rules>
+	</element>
+	<element name="Natural Survivor" type="Racial Trait" source="u/silver_cake" id="ID_RACIAL_TRAIT_NATURAL_SURVIVOR">
+	  <description>
+		<p>Your body is acclimatized to the harsh desert environment. You do not gain exhaustion from being in the heat or sun for too long, and you can survive for a week with little to no water.</p>
+	  </description>
+	  <sheet>
+		<description>Your body is acclimatized to the harsh desert environment. You do not gain exhaustion from being in the heat or sun for too long, and you can survive for a week with little to no water.</description>
+	  </sheet>
+	</element>
+	<element name="Marching Beat" type="Racial Trait" source="u/silver_cake" id="ID_RACIAL_TRAIT_MARCHING_BEAT">
+	  <description>
+		<p>As an action you can drum your feet or tail on the ground to inspire your companions. you and up to 5 creatures that can see and hear you gain temporary hit points equal to your charisma modifier, and can add 1d4 to their next attack roll. once you have used this feature you cannot use it again until you have finished a long rest.</p>
+	  </description>
+	  <sheet usage="1/Long Rest">
+		<description>As an action you can drum your feet or tail on the ground to inspire your companions. You and up to 5 creatures that can see and hear you gain {{charisma:modifier}} temporary hit points, and can add 1d4 to their next attack roll.</description>
+	  </sheet>
+	</element>
 </elements>
